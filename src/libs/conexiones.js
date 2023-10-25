@@ -14,6 +14,15 @@ export async function obtenerArtistas(){
         
     }
 }
+export async function getApiArtista(){
+    //await  la función debe esperar a que se resuelva 
+    //la promesa que se le pasa antes de continuar la ejecución.
+    //hcae una peticion de tipo get
+      const response = await fetch('http://localhost:3000/api/artistas/')
+      return response.json();
+  
+  
+  }
 
 /**
  * 
