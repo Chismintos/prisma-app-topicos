@@ -1,6 +1,16 @@
 import { NextResponse } from "next/server";
+import { Prisma } from "@prisma/client";
 
-export function GET(request, {params:{id}}){
+//End point for a sigle artist 
+//
+export async function GET(request, {params:{id}}){
+    const artista = await prisma.artista.findFirst({
+        where:{
+            id:Number(id)
+        }
+
+    })
+    
     return NextResponse.json({
         mensaje:`Obteniendo un solo artista ${id}`
     })
