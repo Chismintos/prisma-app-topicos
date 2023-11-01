@@ -9,13 +9,13 @@ export const Footer = () => {
       <div className='container mx-auto'>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
           <div>
-            <img
-              src="https://cdn.discordapp.com/attachments/941195386377351179/1164946727858606130/557176c83de88cb7d32afd61b40821ad-relaxed-capybara-flat-image.png?ex=6545102f&is=65329b2f&hm=e02c530e06a19d606f0b9b69d4e29a25e4812e17b37b30d7000b25ba7f88213d&"
-              width={300} // Ajusta el ancho del logo aquí
-              height={300} // Ajusta el alto del logo aquí
+          <Image
+              src="/capybara.png"
+              width={100}
+              height={100}
               alt="logo pagina"
               style={{
-                width: '80%', // Establece el ancho máximo al 100%
+                width: '70%',
               }}
               priority
             />

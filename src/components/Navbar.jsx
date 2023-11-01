@@ -80,8 +80,6 @@ const Navbar = () => {
         
       </Popover>
 
-
-     
    </header>
     </nav>
   )

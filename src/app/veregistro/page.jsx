@@ -8,7 +8,10 @@ const VerRegistroPage = async () => {
     <div>
       <div className='p-5'>
         {artistas.map((artista) => (
-          <TarjetaArtista artista={artista} />
+          <TarjetaArtista
+            key={artista.id}
+            artista={artista} 
+          />
         ))}
       </div>
     </div>
