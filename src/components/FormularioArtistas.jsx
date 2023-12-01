@@ -76,57 +76,49 @@ const FormularioArtistas = () => {
                     onChange={e => setnombre(e.target.value)}
                     
                     ></input>
-            </div>
-            <div className='flex flex-col w-full'>
-                <label htmlFor='edad' className='uppercase font-bold' >Edad</label>
-                <input 
-                    id='edad'
-                    type="number" 
-                    placeholder='Edad' 
-                    className='bg-green-200 p-2 rounded-md'
-                    value={edad}
-                    onChange={(e) => setedad(parseInt(e.target.value, 10))}
-                    ></input>
-            </div>
-            <div className='flex flex-col w-full'>
-                <label htmlFor='banda' className='uppercase font-bold' >Banda</label>
-                <input 
-                    id='banda'
-                    type="String" 
-                    placeholder='Banda' 
-                    className='bg-green-200 p-2 rounded-md'
-                    value={banda}
-                    onChange={e => setbanda(e.target.value)}
-                    ></input>
-            </div>
-            <div className='flex flex-col w-full'>
-                <label htmlFor='genero' className='uppercase font-bold' >Genero Musical</label>
-                <input 
-                    id='genero'
-                    type="String" 
-                    placeholder='Genero Musical' 
-                    className='bg-green-200 p-2 rounded-md'
-                    value={generoMusical}
-                    onChange={e => setgeneroMusical(e.target.value)}
-                    ></input>
-            </div>
-             
-            <div className='flex w-full justify-end '>
-                <button 
-                    type='submit' 
-                    className='bg-green-300 rounded-md p-2 font-semibold hover:bg-red-400 transition-colors duration-300 cursor-pointer'
-                    onClick={handleSubmit}
-                    >Agregar Artista</button>
-            </div>
+                </div>
+                <div className='flex flex-col w-full'>
+                    <label htmlFor='edad' className='uppercase font-bold' >Edad</label>
+                    <input 
+                        id='edad'
+                        type="number" 
+                        placeholder='Edad' 
+                        className='bg-green-200 p-2 rounded-md'
+                        value={edad}
+                        onChange={(e) => setedad(parseInt(e.target.value, 10))}
+                        ></input>
+                </div>
+                <div className='flex flex-col w-full'>
+                    <label htmlFor='banda' className='uppercase font-bold' >Banda</label>
+                    <input 
+                        id='banda'
+                        type="String" 
+                        placeholder='Banda' 
+                        className='bg-green-200 p-2 rounded-md'
+                        value={banda}
+                        onChange={e => setbanda(e.target.value)}
+                        ></input>
+                </div>
+                <div className='flex flex-col w-full'>
+                    <label htmlFor='genero' className='uppercase font-bold' >Genero Musical</label>
+                    <input 
+                        id='genero'
+                        type="String" 
+                        placeholder='Genero Musical' 
+                        className='bg-green-200 p-2 rounded-md'
+                        value={generoMusical}
+                        onChange={e => setgeneroMusical(e.target.value)}
+                        ></input>
+                </div>
+                
+                <div className='flex w-full justify-end '>
+                    <button 
+                        type='submit' 
+                        className='bg-green-300 rounded-md p-2 font-semibold hover:bg-red-400 transition-colors duration-300 cursor-pointer'
+                        onClick={handleSubmit}
+                        >Agregar Artista</button>
+                </div>
 
-            {/* <div className='flex w-full justify-end '>
-                <input 
-                    type='button' 
-                    value={'Limpiar'} 
-                    className='bg-yellow-300 rounded-md p-2 font-semibold hover:bg-red-400 transition-colors duration-300 cursor-pointer'
-                    onClick={limpiar}
-                    ></input>
-            </div> */}
         </form>
         
     </div>

@@ -56,7 +56,7 @@ const Navbar = () => {
                   width="72" height="72"
                   className='p-2'
                   />
-          </div>
+        </div>
 
         <Popover.Overlay className="fixed inset-0 " />
 
